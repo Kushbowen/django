@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+  
+    <style>
+        table,tr,td,th{
+            border-radius: 5px;
+            
+        }
+        
+        th{
+            background-color: chartreuse;
+        }
+        table{
+            width: 75%;
+            height: 400px;
+            margin: auto;
+            
+                         
+        }
+        td{
+            padding: 10px;
+            background-color: lightgreen;
+           
+        }
+    </style>
+    
+</head>
+<body>
+<a href="{% url 'form' %}" class="btn btn-danger">Form</a>
+<a href="{% url 'about' %}" class="btn btn-info">About</a>
+<a href="{% url 'homepage' %}" class="btn btn-danger">back</a>
+<table>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Quality</th>
+    <th>Product quantity</th>
+
+    <tr>
+        <td>1</td>
+        <td>Wheat</td>
+        <td>Good</td>
+        <td>200Bags</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Rice</td>
+        <td>Good</td>
+        <td>250Bags</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Sugar</td>
+        <td>200Bags</td>
+    </tr>
+    <tr>
+        <td>3
+        </td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200Bags</td>
+    </tr>
+    <tr>
+       <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200Bags</td>  
+    </tr>
+    <tr>
+         <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200Bags</td>
+    </tr>
+    
+    
+</table>
+
+</body>
+</html>

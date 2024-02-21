@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+        img{
+            width: 300px;
+            height: 200px
+        }
+        h1{
+            background-color: red;
+            line-height: 100px;
+            color: aqua;
+            font-size: 40px;
+            text-align: center;
+        }
+        h1:hover{
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+<h1>Homepage</h1>
+<a href="{% url 'about' %}" class="btn btn-info">About</a>
+<a href="{% url 'form' %}" class="btn btn-danger">Form</a>
+<a href="{% url 'table' %}" class="btn btn-success">Table</a>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem doloremque ea eius, facere incidunt laboriosam magni maxime odit possimus quia reiciendis rem sit soluta temporibus unde vel veritatis!</p>
+<img src="{% static 'images/d5.jpeg' %}" alt="">
+<img src="{% static 'images/laptop2.jpeg' %}" alt="">
+<img src="{% static 'images/laptop3.jpeg' %}" alt="">
+<img src="{% static 'images/p5.jpeg' %}" alt="">
+<img src="{% static 'images/d5.jpeg' %}" alt="">
+<img src="{% static 'images/d5.jpeg' %}" alt="">
+
+<br><br>
+<h1>Payment</h1>
+<p class="paragraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam atque aut consequuntur eaque eos esse eum explicabo fugit magni maiores minus perferendis qui repudiandae, sit suscipit tempore veritatis!</p>
+
+<img src="{% static 'images/d5.jpeg' %}" alt="" id="image">
+</body>
+</html>
